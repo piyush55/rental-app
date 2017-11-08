@@ -38,6 +38,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'vcr'
+  gem 'fakeweb'
 end
 
 group :development do

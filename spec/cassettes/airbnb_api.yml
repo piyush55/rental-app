@@ -1,0 +1,414 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_month&address=Indore&region=Indore
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_month&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"ac87c4e440709d8acfee9828cdaac685"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '231'
+      expires:
+      - Wed, 08 Nov 2017 10:18:14 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Wed, 08 Nov 2017 10:18:14 GMT
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136294_pdNMxZxq9tURgCIt; domain=.airbnb.com; path=/; expires=Fri,
+        08-Nov-2019 10:18:14 GMT; secure
+      - _airbed_session_id=ac04f377b4d8f0e52c1cc3bd48a242ba; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Wed, 08-Nov-2017 12:18:14 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?address=Indore&amp;duration=1_month&amp;occupancy_rate=100&amp;person_capacity=2&amp;region=Indore&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:14 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_month&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"f968f6ab2ecc8f611ba4880a45ad3c95"
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com
+        tpc.googlesyndication.com www.googletagmanager.com maps.googleapis.com ajax.googleapis.com
+        app.link cdn.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com
+        static.criteo.net dis.criteo.com widget.us.criteo.com ethn.io blob: webapi.amap.com
+        restapi.amap.com *.inspectlet.com https:; style-src ''self'' https: ''unsafe-inline'';
+        report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=9bcbbcd6-66bf-4fc5-bf8f-71d78c81486f&version=0d5925ee64c39b8d5b94dd41c37d668950a343fa'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      vary:
+      - Accept-Encoding
+      date:
+      - Wed, 08 Nov 2017 10:18:16 GMT
+      content-length:
+      - '253'
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136296_r0ft0hLvdmh9AW0F; domain=.airbnb.co.in; path=/; expires=Fri,
+        08-Nov-2019 10:18:16 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%24APmAnyR-8oo%24NdqSRJft7CyMRRbRqtulX0dKTfKG8xGhnpnePqfFNso%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.71926500000001%2C%22device_profiling_session_id%22%3A%221510136296--88a5236378efb71756f858d9%22%2C%22giftcard_profiling_session_id%22%3A%221510136296--2067b10ee6653861154a8f00%22%2C%22reservation_profiling_session_id%22%3A%221510136296--9462da011a4fac5cc8d53ff4%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Fri, 08-Nov-2019 10:18:16 GMT; secure
+      - flags=268435456; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6NTgxLjE0NjAwODY5OTE0
+        MjIsImF2ZXJhZ2VfaW5jb21lIjoi4oK5MzcsNjExIiwicGVyc29uX2NhcGFj
+        aXR5IjoyLCJsb2NhbGl6ZWRfcGxhY2UiOiJJbmRvcmUiLCJsaXN0X3lvdXJf
+        c3BhY2VfbGluayI6Imh0dHBzOi8vd3d3LmFpcmJuYi5jby5pbi9yb29tcy9u
+        ZXciLCJlYXJuaW5nX2VzdGltYXRpb25fZHVyYXRpb24iOiIxX21vbnRoIiwi
+        bG9jYWxpemVkX21hcmtldCI6IkluZG9yZSJ9fQ==
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:16 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_week&address=Indore&region=Indore
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_week&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"1ab0f95b35af90c4a9199b94abd9ba46"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '230'
+      expires:
+      - Wed, 08 Nov 2017 10:18:23 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Wed, 08 Nov 2017 10:18:23 GMT
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136303_jlXqf4vuwHPGRv9K; domain=.airbnb.com; path=/; expires=Fri,
+        08-Nov-2019 10:18:23 GMT; secure
+      - _airbed_session_id=2b407fb04295c118330732b0a499a4dd; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Wed, 08-Nov-2017 12:18:23 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?address=Indore&amp;duration=1_week&amp;occupancy_rate=100&amp;person_capacity=2&amp;region=Indore&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:23 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_week&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"52f271ada85873803e5d94af9c4e8c93"
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com
+        tpc.googlesyndication.com www.googletagmanager.com maps.googleapis.com ajax.googleapis.com
+        app.link cdn.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com
+        static.criteo.net dis.criteo.com widget.us.criteo.com ethn.io blob: webapi.amap.com
+        restapi.amap.com *.inspectlet.com https:; style-src ''self'' https: ''unsafe-inline'';
+        report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=3dba8a6c-9efc-492d-9812-6b5257aeb2a7&version=0d5925ee64c39b8d5b94dd41c37d668950a343fa'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      vary:
+      - Accept-Encoding
+      date:
+      - Wed, 08 Nov 2017 10:18:25 GMT
+      content-length:
+      - '252'
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136305_1mVCvtESYbpuZkGQ; domain=.airbnb.co.in; path=/; expires=Fri,
+        08-Nov-2019 10:18:25 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%24qOV4VorKD8k%24EE65H-jyqulqemsFks0PMXs4UsUuktKGhIkas08h8iM%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.71926500000001%2C%22device_profiling_session_id%22%3A%221510136305--e0cb762614b00cc875b9049c%22%2C%22giftcard_profiling_session_id%22%3A%221510136305--ddca482a6b298f6cdb8c4ed5%22%2C%22reservation_profiling_session_id%22%3A%221510136305--faeb88f87e9a478cd771773b%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Fri, 08-Nov-2019 10:18:25 GMT; secure
+      - flags=268435456; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6MTM1LjYwMDczNTM2MzEz
+        MzE3LCJhdmVyYWdlX2luY29tZSI6IuKCuTgsNzc2IiwicGVyc29uX2NhcGFj
+        aXR5IjoyLCJsb2NhbGl6ZWRfcGxhY2UiOiJJbmRvcmUiLCJsaXN0X3lvdXJf
+        c3BhY2VfbGluayI6Imh0dHBzOi8vd3d3LmFpcmJuYi5jby5pbi9yb29tcy9u
+        ZXciLCJlYXJuaW5nX2VzdGltYXRpb25fZHVyYXRpb24iOiIxX3dlZWsiLCJs
+        b2NhbGl6ZWRfbWFya2V0IjoiSW5kb3JlIn19
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:25 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_year&address=Indore&region=Indore
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_year&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"40591b0423787f2f36867e74ad5081eb"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '230'
+      expires:
+      - Wed, 08 Nov 2017 10:18:27 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Wed, 08 Nov 2017 10:18:27 GMT
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136306_70FQZPi1%2FcC0EXW6; domain=.airbnb.com; path=/; expires=Fri,
+        08-Nov-2019 10:18:27 GMT; secure
+      - _airbed_session_id=595188fa7cf47fea6fd0731d298a0d5a; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Wed, 08-Nov-2017 12:18:27 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?address=Indore&amp;duration=1_year&amp;occupancy_rate=100&amp;person_capacity=2&amp;region=Indore&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:27 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?address=Indore&duration=1_year&occupancy_rate=100&person_capacity=2&region=Indore&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"26b67b32f724d073954ea505740379ac"
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com
+        tpc.googlesyndication.com www.googletagmanager.com maps.googleapis.com ajax.googleapis.com
+        app.link cdn.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com
+        static.criteo.net dis.criteo.com widget.us.criteo.com ethn.io blob: webapi.amap.com
+        restapi.amap.com *.inspectlet.com https:; style-src ''self'' https: ''unsafe-inline'';
+        report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=8630c8c5-680e-4231-a516-14777867acc0&version=0d5925ee64c39b8d5b94dd41c37d668950a343fa'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      vary:
+      - Accept-Encoding
+      date:
+      - Wed, 08 Nov 2017 10:18:28 GMT
+      content-length:
+      - '254'
+      connection:
+      - keep-alive
+      set-cookie:
+      - bev=1510136308_JLMhkjOuoP8l6KLg; domain=.airbnb.co.in; path=/; expires=Fri,
+        08-Nov-2019 10:18:28 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%245PuDHUQeXlk%249-DBz_Ohp741WvOzzEnwDjWARj9_nbnro-IunZEF4pI%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.71926500000001%2C%22device_profiling_session_id%22%3A%221510136308--0a965121685fb4825a5bd6f1%22%2C%22giftcard_profiling_session_id%22%3A%221510136308--783c121398fe461482d83ae6%22%2C%22reservation_profiling_session_id%22%3A%221510136308--2fe4feec913982860f56080d%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Fri, 08-Nov-2019 10:18:28 GMT; secure
+      - flags=268435456; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6NzU2Ni45OTY3MTAzOTQx
+        ODQsImF2ZXJhZ2VfaW5jb21lIjoi4oK5NCw4OSw3MzAiLCJwZXJzb25fY2Fw
+        YWNpdHkiOjIsImxvY2FsaXplZF9wbGFjZSI6IkluZG9yZSIsImxpc3RfeW91
+        cl9zcGFjZV9saW5rIjoiaHR0cHM6Ly93d3cuYWlyYm5iLmNvLmluL3Jvb21z
+        L25ldyIsImVhcm5pbmdfZXN0aW1hdGlvbl9kdXJhdGlvbiI6IjFfeWVhciIs
+        ImxvY2FsaXplZF9tYXJrZXQiOiJJbmRvcmUifX0=
+    http_version: '1.1'
+  recorded_at: Wed, 08 Nov 2017 10:18:29 GMT
+recorded_with: VCR 3.0.3
