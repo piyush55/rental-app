@@ -7,14 +7,14 @@
   <div class="container">
     <div class="row">
 
-      <%= form_tag url: compare_locations_path, method: 'get' do%>
+      <%= form_for @price_request, url: compare_locations_path, method: 'get' do |f| %>
         <div class="col-sm-3">
           <span> Address</span>
-          <%= text_field_tag "address", nil, class: "form-control" %>
+          <%= f.text_field :address, class: "form-control" %>
         </div>
         <div class="col-sm-3">
           <span> Monthly Average Rental</span>
-          <%= text_field_tag "avg_long_term_rental", nil, class: "form-control" %>
+          <%= f.text_field :avg_long_term_rental, class: "form-control" %>
         </div>
         <div class="col-sm-3">
           <%= button_tag 'Compare', type: :button, id: 'compare_button', class: "btn btn-primary", style: "margin-top: 17px;" %>
@@ -30,7 +30,7 @@
 </div>
 <script>
   function initAutocomplete() {
-    var input = document.getElementById('address');
+    var input = document.getElementById('price_request_address');
     var searchBox = new google.maps.places.SearchBox(input);
     var location = {};
     searchBox.addListener('places_changed', function() {
@@ -47,11 +47,11 @@
   }
 
 function search_data(){
-  if ( $('#address').val().trim() == '' ){
+  if ( $('#price_request_address').val().trim() == '' ){
    return null
   }
   var location = JSON.parse($('#location_data').val())
-  var rent = $('#avg_long_term_rental').val();
+  var rent = $('#price_request_avg_long_term_rental').val();
   return {location: location, avg_long_term_rental: rent}
 }
 

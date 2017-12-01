@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   def index
+    @price_request = PriceRequest.new
   end
 
   def compare
