@@ -5,7 +5,7 @@ class PriceRequestController < ApplicationController
 
   def create
     @price_request = PriceRequest.new(price_request_params)
-    if @price_request.valid? && @price_request.airbnb_monthly_rent
+    if @price_request.valid?
       render json: { average_airbnb_income: @price_request.airbnb_monthly_rent,
                      rent_diffrence: @price_request.rent_diffrence }.to_json, status: 200
     else

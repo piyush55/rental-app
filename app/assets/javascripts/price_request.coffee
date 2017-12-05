@@ -14,4 +14,4 @@ $(document).ready ->
     $('.alert-section').remove()
     $('.rent_diff').html ''
     Object.keys(error_obj).forEach (key) ->
-      $('#new_price_request').prepend '<div class="alert-section"> <div class="alert alert-danger" role="alert"> <button type="button" class="close" data-dismiss="alert"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <p>' + error_labels[key] + ' ' + error_obj[key] + '</p> </div></div>'
+      $('#new_price_request').prepend '<div class="alert-section"> <div class="alert alert-danger" role="alert"> <button type="button" class="close" data-dismiss="alert"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <p>' + (error_labels[key] || '') + ' ' + error_obj[key] + '</p> </div></div>'
