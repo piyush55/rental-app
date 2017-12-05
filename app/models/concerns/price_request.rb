@@ -4,7 +4,7 @@ class PriceRequest
 
   attr_accessor :address, :avg_long_term_rental, :region
   validates_presence_of :address
-  validates_presence_of :avg_long_term_rental
+  validates_numericality_of :avg_long_term_rental
 
   def rent_diffrence
     avg_long_term_rental.to_f - airbnb_monthly_rent
