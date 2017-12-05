@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  root 'locations#index'
-
-  resource :locations, only: [:index] do
-    get :compare
-  end
+  root 'price_request#new'
+  resources :price_request, only: [:new, :create]
 end
