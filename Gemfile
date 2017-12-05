@@ -36,6 +36,7 @@ gem "twitter-bootstrap-rails"
 # For jQuery Geocoding
 gem 'geocomplete_rails'
 
+gem 'httparty'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

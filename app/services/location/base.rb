@@ -1,14 +1,16 @@
-require 'open-uri'
+require 'httparty'
 module Location
   class Base
+    include HTTParty
     attr_reader :url
 
-    def initialize(options={})
+    def initialize(options = {})
       @address = options[:address]
       @region = options[:region]
     end
 
     private
+
     def default_options
       {
         person_capacity: 2,

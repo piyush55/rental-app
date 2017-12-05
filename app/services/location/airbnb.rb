@@ -1,7 +1,6 @@
 module Location
   class Airbnb < Base
-    URL = 'https://www.airbnb.com/wmpw_data.json'
-
+    base_uri 'https://www.airbnb.com'
     def initialize(options = {})
       super(options)
     end
@@ -22,31 +21,27 @@ module Location
     end
 
     private
+
     def fetch_details(options)
-      response = open(url_with_query_params(options), 'User-Agent' => 'Mozilla').read
-      parsed_result = JSON.parse(response)
+      response = self.class.get('/wmpw_data.json', query: options, headers: headers)
+      raise StandardError, response.response unless response.code == 200 || response.code == 201
+      parsed_result = JSON.parse(response.body)
       return {
         success: true,
         data: parsed_result['data']
       }
     rescue Exception => e
-      Rails.logger.log("======Error while fetch details from Airbnb======")
-      Rails.logger.log(e.messsage)
+      Rails.logger.info('======Error while fetch details from Airbnb======')
+      Rails.logger.info(e.message)
       return {
         success: false,
-        messsage: e.messsage,
+        messsage: e.message,
         data: {}
       }
     end
 
-    def url_with_query_params(options)
-      options[:address] = @address
-      options[:region] = @region
-      "#{URL}?#{query_params(options)}"
-    end
-
-    def query_params(options)
-      URI.encode(options.map{|k,v| "#{k}=#{v}" }.join("&"))
+    def headers
+      { 'User-Agent' => 'Mozilla' }
     end
   end
 end
