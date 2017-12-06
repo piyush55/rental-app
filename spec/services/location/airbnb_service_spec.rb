@@ -6,7 +6,7 @@ describe 'Airbnb' do
     VCR.use_cassette('airbnb_api') do
       airbnb = Location::Airbnb.new(AirbnbParams)
       response = airbnb.monthly_rentail_details
-      expect(response[:data]['average_income']).to eq "₹37,611"
+      expect(response[:data]['average_income']).to eq  '₹39,915'
     end
   end
 
@@ -14,7 +14,7 @@ describe 'Airbnb' do
     VCR.use_cassette('airbnb_api') do
       airbnb = Location::Airbnb.new(AirbnbParams)
       response = airbnb.weekly_rentail_details
-      expect(response[:data]['average_income']).to eq "₹8,776"
+      expect(response[:data]['average_income']).to eq '₹9,313'
     end
   end
 
@@ -22,7 +22,7 @@ describe 'Airbnb' do
     VCR.use_cassette('airbnb_api') do
       airbnb = Location::Airbnb.new(AirbnbParams)
       response = airbnb.yearly_rentail_details
-      expect(response[:data]['average_income']).to eq "₹4,89,730"
+      expect(response[:data]['average_income']).to eq '₹4,87,189'
     end
   end
 end

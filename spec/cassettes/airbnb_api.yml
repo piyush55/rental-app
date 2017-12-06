@@ -411,4 +411,564 @@ http_interactions:
         ImxvY2FsaXplZF9tYXJrZXQiOiJJbmRvcmUifX0=
     http_version: '1.1'
   recorded_at: Wed, 08 Nov 2017 10:18:29 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"66d13e2e5ef4f6e05942cfb405621a04"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '105'
+      expires:
+      - Tue, 05 Dec 2017 14:51:26 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Tue, 05 Dec 2017 14:51:26 GMT
+      connection:
+      - close
+      set-cookie:
+      - bev=1512485486_4CQnkcEx48xzdYKW; domain=.airbnb.com; path=/; expires=Thu,
+        05-Dec-2019 14:51:26 GMT; secure
+      - _airbed_session_id=d658eecb89134d9944dea370a83bb287; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Tue, 05-Dec-2017 16:51:26 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 14:51:26 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      cookie:
+      - bev=1512485486_4CQnkcEx48xzdYKW; _airbed_session_id=d658eecb89134d9944dea370a83bb287;
+        mdr_browser=desktop
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"b6cdce4c80a300137a867203d35f7502"
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com
+        www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com
+        maps.googleapis.com ajax.googleapis.com app.link cdn.branch.io bam.nr-data.net
+        js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com
+        widget.us.criteo.com ethn.io blob: webapi.amap.com restapi.amap.com *.inspectlet.com
+        https:; style-src ''self'' https: ''unsafe-inline''; report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=da0d5e9c-092b-4fc1-aded-526bba4a57f1&version=ae1a9c14cfb085502c90f4c3b50c22f3c5a5bfb8'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      date:
+      - Tue, 05 Dec 2017 14:51:27 GMT
+      content-length:
+      - '240'
+      connection:
+      - close
+      set-cookie:
+      - bev=1512485486_4CQnkcEx48xzdYKW; domain=.airbnb.co.in; path=/; expires=Thu,
+        05-Dec-2019 14:51:27 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%2475VqE6dCR7c%24oW2x5ELLCROLEmRqhIvoHFj4NXzCN1D7vAHVJ9JwV04%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - jitney_client_session_id=9037fb5b-a612-4bf3-aba2-84218812f9b1; domain=.airbnb.co.in;
+        path=/; expires=Wed, 06-Dec-2017 14:51:27 GMT; secure
+      - jitney_client_session_created_at=1512485487; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 14:51:27 GMT; secure
+      - jitney_client_session_updated_at=1512485487; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 14:51:27 GMT; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.42581%2C%22device_profiling_session_id%22%3A%221512485487--39309e08aa10fe811c80a0a5%22%2C%22giftcard_profiling_session_id%22%3A%221512485487--77ba60b0950d7b38d0f4b018%22%2C%22reservation_profiling_session_id%22%3A%221512485487--cae32c70fa0bf49046b8f1d5%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Thu, 05-Dec-2019 14:51:27 GMT; secure
+      - flags=268697600; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6MTU0LjkxLCJhdmVyYWdl
+        X2luY29tZSI6IuKCuTksOTgwIiwicGVyc29uX2NhcGFjaXR5IjoxLCJsb2Nh
+        bGl6ZWRfcGxhY2UiOiJJbmRvcmUiLCJsaXN0X3lvdXJfc3BhY2VfbGluayI6
+        Imh0dHBzOi8vd3d3LmFpcmJuYi5jby5pbi9yb29tcy9uZXciLCJlYXJuaW5n
+        X2VzdGltYXRpb25fZHVyYXRpb24iOiIxX3dlZWsiLCJsb2NhbGl6ZWRfbWFy
+        a2V0IjoiSW5kb3JlIn19
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 14:51:27 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_month
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?duration=1_month&occupancy_rate=100&person_capacity=2&room_type=private_room
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"c444cf1315ffb43cd20e47d23d26f8e6"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '194'
+      expires:
+      - Tue, 05 Dec 2017 14:58:49 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Tue, 05 Dec 2017 14:58:49 GMT
+      connection:
+      - close
+      set-cookie:
+      - bev=1512485929_R65NxABD19IZmlK5; domain=.airbnb.com; path=/; expires=Thu,
+        05-Dec-2019 14:58:49 GMT; secure
+      - _airbed_session_id=f8c774b827ab1df7c8b14acb53313ced; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Tue, 05-Dec-2017 16:58:49 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?duration=1_month&amp;occupancy_rate=100&amp;person_capacity=2&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 14:58:49 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?duration=1_month&occupancy_rate=100&person_capacity=2&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      cookie:
+      - bev=1512485929_R65NxABD19IZmlK5; _airbed_session_id=f8c774b827ab1df7c8b14acb53313ced;
+        mdr_browser=desktop
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"818c654361fe3ba861c8dd667e5261f7"
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com
+        www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com
+        maps.googleapis.com ajax.googleapis.com app.link cdn.branch.io bam.nr-data.net
+        js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com
+        widget.us.criteo.com ethn.io blob: webapi.amap.com restapi.amap.com *.inspectlet.com
+        https:; style-src ''self'' https: ''unsafe-inline''; report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=7b7435d1-84e9-47e4-96ee-72ba6211e92e&version=ae1a9c14cfb085502c90f4c3b50c22f3c5a5bfb8'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      date:
+      - Tue, 05 Dec 2017 14:58:50 GMT
+      content-length:
+      - '253'
+      connection:
+      - close
+      set-cookie:
+      - bev=1512485929_R65NxABD19IZmlK5; domain=.airbnb.co.in; path=/; expires=Thu,
+        05-Dec-2019 14:58:50 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%24fUpyCfh57c8%24HIeLeZNqNlBP4jF-D7lsE6H4ADmgjyZ6T_680W4boVk%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - jitney_client_session_id=16a8ef84-fb0f-41eb-8306-f30158af2c47; domain=.airbnb.co.in;
+        path=/; expires=Wed, 06-Dec-2017 14:58:50 GMT; secure
+      - jitney_client_session_created_at=1512485930; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 14:58:50 GMT; secure
+      - jitney_client_session_updated_at=1512485930; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 14:58:50 GMT; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.42581%2C%22device_profiling_session_id%22%3A%221512485930--cca3c948de7dd4a7f7fbc9d5%22%2C%22giftcard_profiling_session_id%22%3A%221512485930--0a0920de8aa041a4493b0b04%22%2C%22reservation_profiling_session_id%22%3A%221512485930--1165fa651ab4f2283ace9981%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Thu, 05-Dec-2019 14:58:50 GMT; secure
+      - flags=268697600; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6NjEzLjIzNzk1MTYxMTc5
+        NzUsImF2ZXJhZ2VfaW5jb21lIjoi4oK5MzksNTA4IiwicGVyc29uX2NhcGFj
+        aXR5IjoyLCJsb2NhbGl6ZWRfcGxhY2UiOiJJbmRvcmUiLCJsaXN0X3lvdXJf
+        c3BhY2VfbGluayI6Imh0dHBzOi8vd3d3LmFpcmJuYi5jby5pbi9yb29tcy9u
+        ZXciLCJlYXJuaW5nX2VzdGltYXRpb25fZHVyYXRpb24iOiIxX21vbnRoIiwi
+        bG9jYWxpemVkX21hcmtldCI6IkluZG9yZSJ9fQ==
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 14:58:50 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_week
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?duration=1_week&occupancy_rate=100&person_capacity=2&room_type=private_room
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"9646a1d25dfdabed4f79cb9443866c22"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '193'
+      expires:
+      - Tue, 05 Dec 2017 15:01:29 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Tue, 05 Dec 2017 15:01:29 GMT
+      connection:
+      - close
+      set-cookie:
+      - bev=1512486089_05UEPljd%2B8lD%2BPBj; domain=.airbnb.com; path=/; expires=Thu,
+        05-Dec-2019 15:01:29 GMT; secure
+      - _airbed_session_id=2f2a032d61840379f277b5c00d869672; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Tue, 05-Dec-2017 17:01:29 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?duration=1_week&amp;occupancy_rate=100&amp;person_capacity=2&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 15:01:29 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?duration=1_week&occupancy_rate=100&person_capacity=2&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      cookie:
+      - bev=1512486089_05UEPljd%2B8lD%2BPBj; _airbed_session_id=2f2a032d61840379f277b5c00d869672;
+        mdr_browser=desktop
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"07cbecea9769608c52f74832a98de2e7"
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com
+        www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com
+        maps.googleapis.com ajax.googleapis.com app.link cdn.branch.io bam.nr-data.net
+        js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com
+        widget.us.criteo.com ethn.io blob: webapi.amap.com restapi.amap.com *.inspectlet.com
+        https:; style-src ''self'' https: ''unsafe-inline''; report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=490e5b03-bd52-438a-853e-1f4814eac177&version=ae1a9c14cfb085502c90f4c3b50c22f3c5a5bfb8'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      date:
+      - Tue, 05 Dec 2017 15:01:30 GMT
+      content-length:
+      - '251'
+      connection:
+      - close
+      set-cookie:
+      - bev=1512486089_05UEPljd%2B8lD%2BPBj; domain=.airbnb.co.in; path=/; expires=Thu,
+        05-Dec-2019 15:01:30 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%24X3mmWCZ6SDM%24JfW0NWDTa36ZpRwxghQkWspOJAqbtQW-TNBaVPRkUEQ%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - jitney_client_session_id=ce635053-b1cc-45ae-9195-14d6eb3c81a3; domain=.airbnb.co.in;
+        path=/; expires=Wed, 06-Dec-2017 15:01:30 GMT; secure
+      - jitney_client_session_created_at=1512486090; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 15:01:30 GMT; secure
+      - jitney_client_session_updated_at=1512486090; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 15:01:30 GMT; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.42581%2C%22device_profiling_session_id%22%3A%221512486090--5975127f11d9174952f70d58%22%2C%22giftcard_profiling_session_id%22%3A%221512486090--60b9fba3a27ac93641b6d8b7%22%2C%22reservation_profiling_session_id%22%3A%221512486090--7b3a9a5b95e6e59c5ca76696%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Thu, 05-Dec-2019 15:01:30 GMT; secure
+      - flags=268697600; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6MTQzLjA4ODg1NTM3NjA4
+        NjEsImF2ZXJhZ2VfaW5jb21lIjoi4oK5OSwyMTkiLCJwZXJzb25fY2FwYWNp
+        dHkiOjIsImxvY2FsaXplZF9wbGFjZSI6IkluZG9yZSIsImxpc3RfeW91cl9z
+        cGFjZV9saW5rIjoiaHR0cHM6Ly93d3cuYWlyYm5iLmNvLmluL3Jvb21zL25l
+        dyIsImVhcm5pbmdfZXN0aW1hdGlvbl9kdXJhdGlvbiI6IjFfd2VlayIsImxv
+        Y2FsaXplZF9tYXJrZXQiOiJJbmRvcmUifX0=
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 15:01:30 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.com/wmpw_data.json?person_capacity=2&room_type=private_room&occupancy_rate=100&duration=1_year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      server:
+      - nginx
+      content-type:
+      - text/html; charset=utf-8
+      status:
+      - 302 Found
+      location:
+      - https://www.airbnb.co.in/wmpw_data.json?duration=1_year&occupancy_rate=100&person_capacity=2&room_type=private_room
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - '"1b497693d659d8996c635a25e04545dd"'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      x-server-name:
+      - www.airbnb.com
+      content-length:
+      - '193'
+      expires:
+      - Tue, 05 Dec 2017 15:02:18 GMT
+      cache-control:
+      - max-age=0, no-cache, no-store
+      pragma:
+      - no-cache
+      date:
+      - Tue, 05 Dec 2017 15:02:18 GMT
+      connection:
+      - close
+      set-cookie:
+      - bev=1512486138_vc0rBOA%2FS9SnGgcu; domain=.airbnb.com; path=/; expires=Thu,
+        05-Dec-2019 15:02:18 GMT; secure
+      - _airbed_session_id=f3bdb6f34068e50b6cb2288e8200cf9a; domain=.airbnb.com; path=/;
+        secure; HttpOnly
+      - mdr_browser=desktop; expires=Tue, 05-Dec-2017 17:02:18 GMT; path=/; domain=.airbnb.com
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.airbnb.co.in/wmpw_data.json?duration=1_year&amp;occupancy_rate=100&amp;person_capacity=2&amp;room_type=private_room">redirected</a>.</body></html>
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 15:02:18 GMT
+- request:
+    method: get
+    uri: https://www.airbnb.co.in/wmpw_data.json?duration=1_year&occupancy_rate=100&person_capacity=2&room_type=private_room
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla
+      cookie:
+      - bev=1512486138_vc0rBOA%2FS9SnGgcu; _airbed_session_id=f3bdb6f34068e50b6cb2288e8200cf9a;
+        mdr_browser=desktop
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      x-frame-options:
+      - SAMEORIGIN
+      cache-control:
+      - no-store, max-age=0, private, must-revalidate
+      etag:
+      - W/"72df34ffa5049deb60651422e72755cd"
+      referrer-policy:
+      - same-origin
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-security-policy:
+      - 'default-src ''self'' https: blob:; child-src *; connect-src ''self'' https:
+        wss: *.amap.com *.inspectlet.com; font-src ''self'' data: *.muscache.com fonts.gstatic.com
+        use.typekit.net; img-src ''self'' https: data: *.inspectlet.com; media-src
+        ''self'' https:; script-src ''self'' ''unsafe-eval'' a0.muscache.com cdn.siftscience.com
+        ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com
+        www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com
+        maps.googleapis.com ajax.googleapis.com app.link cdn.branch.io bam.nr-data.net
+        js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com
+        widget.us.criteo.com ethn.io blob: webapi.amap.com restapi.amap.com *.inspectlet.com
+        https:; style-src ''self'' https: ''unsafe-inline''; report-uri /tracking/csp?action=wmpw_data&controller=info&report_only=false&req_uuid=ce6b3217-5a01-4b35-af39-ac2dd7670416&version=ae1a9c14cfb085502c90f4c3b50c22f3c5a5bfb8'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      strict-transport-security:
+      - max-age=10886400; includeSubdomains
+      date:
+      - Tue, 05 Dec 2017 15:02:20 GMT
+      content-length:
+      - '254'
+      connection:
+      - close
+      set-cookie:
+      - bev=1512486138_vc0rBOA%2FS9SnGgcu; domain=.airbnb.co.in; path=/; expires=Thu,
+        05-Dec-2019 15:02:19 GMT; secure
+      - _csrf_token=V4%24.airbnb.co.in%24YWEdT53WzkY%24pdCTV-JuQsw7T12JaBfKkVW0XDDME0-m_O6MvZD30sg%3D;
+        domain=.airbnb.co.in; path=/; secure
+      - jitney_client_session_id=abca353b-9b6f-4a0e-9118-d89c3d7bd18b; domain=.airbnb.co.in;
+        path=/; expires=Wed, 06-Dec-2017 15:02:19 GMT; secure
+      - jitney_client_session_created_at=1512486139; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 15:02:19 GMT; secure
+      - jitney_client_session_updated_at=1512486139; domain=.airbnb.co.in; path=/;
+        expires=Wed, 06-Dec-2017 15:02:19 GMT; secure
+      - _user_attributes=%7B%22curr%22%3A%22INR%22%2C%22guest_exchange%22%3A64.42581%2C%22device_profiling_session_id%22%3A%221512486140--1b867530ae487a0008c32b5b%22%2C%22giftcard_profiling_session_id%22%3A%221512486140--36ab8d14f198dbcb1734d410%22%2C%22reservation_profiling_session_id%22%3A%221512486140--58e0694d4bc97aca5f208ef5%22%7D;
+        domain=.airbnb.co.in; path=/; expires=Thu, 05-Dec-2019 15:02:20 GMT; secure
+      - flags=268697600; domain=.airbnb.co.in; path=/; secure
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImF2ZXJhZ2VfaW5jb21lX3JhdyI6NzU2NS43Mjg3MTgzMTk3
+        NjgsImF2ZXJhZ2VfaW5jb21lIjoi4oK5NCw4Nyw0MjgiLCJwZXJzb25fY2Fw
+        YWNpdHkiOjIsImxvY2FsaXplZF9wbGFjZSI6IkluZG9yZSIsImxpc3RfeW91
+        cl9zcGFjZV9saW5rIjoiaHR0cHM6Ly93d3cuYWlyYm5iLmNvLmluL3Jvb21z
+        L25ldyIsImVhcm5pbmdfZXN0aW1hdGlvbl9kdXJhdGlvbiI6IjFfeWVhciIs
+        ImxvY2FsaXplZF9tYXJrZXQiOiJJbmRvcmUifX0=
+    http_version: '1.1'
+  recorded_at: Tue, 05 Dec 2017 15:02:20 GMT
 recorded_with: VCR 3.0.3
